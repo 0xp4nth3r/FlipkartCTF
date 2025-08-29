@@ -1,4 +1,4 @@
-Project Guardian 2.0 – PII Detector & Redactor
+### Project Guardian 2.0 – PII Detector & Redactor
  Overview
 
 This project is part of Project Guardian 2.0, an initiative to prevent PII (Personally Identifiable Information) leakage within data pipelines.
@@ -7,7 +7,7 @@ It provides a Python-based PII Detector & Redactor that scans JSON records insid
 
 The solution ensures compliance, prevents fraud, and strengthens customer trust.
 
- Features
+### Features
 
 Detects Standalone PII:
 
@@ -43,31 +43,31 @@ redacted_data_json
 
 is_pii (True/False)
 
-Repository Structure
+### Repository Structure
 .
 ├── detector_full_candidate_name.py     # Main Python script
 ├── iscp_pii_dataset.csv                # Input dataset (not included here)
 ├── redacted_output_full_candidate_name.csv  # Sample output
 └── README.md                           # Documentation
 
-Usage
-1Run the Script
+### Usage
+Run the Script
 python3 detector_full_candidate_name.py iscp_pii_dataset.csv
 
-Output
+### Output
 
 A new file will be generated:
 
 redacted_output_full_candidate_name.csv
 
-Format:
+### Format:
 
 record_id,redacted_data_json,is_pii
 1,"{""phone"": ""98XXXXXX10"", ""order_value"": 1299}",True
 2,"{""name"": ""[REDACTED_PII]"", ""email"": ""[REDACTED_PII]""}",True
 3,"{""product"": ""Shoes"", ""price"": 999}",False
 
- Deployment Strategy
+### Deployment Strategy
 
 Based on the system architecture, the PII Detector can be deployed as:
 
@@ -87,7 +87,7 @@ Low latency, cost-effective, and scalable.
 
 Easy integration with existing Express APIs (/api/logs, /api/analyze).
 
-Scoring Metrics Alignment
+### Scoring Metrics Alignment
 
 Detection Accuracy (70%) → Regex + combinatorial detection for F1 ≥ 0.95
 
