@@ -45,10 +45,10 @@ is_pii (True/False)
 
 ### Repository Structure
 .
-├── detector_full_candidate_name.py     # Main Python script
-├── iscp_pii_dataset.csv                # Input dataset (not included here)
-├── redacted_output_full_candidate_name.csv  # Sample output
-└── README.md                           # Documentation
+├── detector_full_candidate_name.py     
+├── iscp_pii_dataset.csv                
+├── redacted_output_full_candidate_name.csv  
+└── README.md                          
 
 ### Usage
 Run the Script
