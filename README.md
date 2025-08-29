@@ -59,9 +59,9 @@ python3 detector_full_candidate_name.py iscp_pii_dataset.csv
 ### Output
 
 A new file will be generated:
-
+```
 redacted_output_full_candidate_name.csv
-
+```
 ### Format:
 ```
 record_id,redacted_data_json,is_pii
@@ -70,7 +70,7 @@ record_id,redacted_data_json,is_pii
 3,"{""product"": ""Shoes"", ""price"": 999}",False
 ```
 ### Deployment Strategy
-
+```
 Based on the system architecture, the PII Detector can be deployed as:
 
 Express Middleware – runs inline in the backend (lowest latency).
@@ -98,3 +98,4 @@ Redaction Quality (20%) → Consistent masking & safe placeholders
 Code Quality (10%) → Clean, modular, error-handling included
 
 Deployment Feasibility (30%) → Middleware-based approach ensures scalability, low latency, and ease of integration
+```
