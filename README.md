@@ -52,7 +52,9 @@ is_pii (True/False)
 
 ### Usage
 Run the Script
+```
 python3 detector_full_candidate_name.py iscp_pii_dataset.csv
+```
 
 ### Output
 
