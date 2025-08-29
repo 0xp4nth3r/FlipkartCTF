@@ -44,7 +44,7 @@ redacted_data_json
 is_pii (True/False)
 
 ### Repository Structure
-.
+
 ├── detector_full_candidate_name.py     
 ├── iscp_pii_dataset.csv                
 ├── redacted_output_full_candidate_name.csv  
