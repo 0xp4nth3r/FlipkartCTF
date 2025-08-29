@@ -10,7 +10,7 @@ The solution ensures compliance, prevents fraud, and strengthens customer trust.
 ### Features
 
 Detects Standalone PII:
-
+```
 Phone numbers (10-digit)
 
 Aadhaar numbers (12-digit)
@@ -34,7 +34,7 @@ Phone → 98XXXXXX10
 Aadhaar → XXXX XXXX XXXX
 
 Passport / UPI / Address → [REDACTED_PII]
-
+```
 Outputs a clean CSV with:
 
 record_id
@@ -44,12 +44,12 @@ redacted_data_json
 is_pii (True/False)
 
 ### Repository Structure
-
+```
 ├── detector_full_candidate_name.py     
 ├── iscp_pii_dataset.csv                
 ├── redacted_output_full_candidate_name.csv  
 └── README.md                          
-
+```
 ### Usage
 Run the Script
 ```
@@ -63,12 +63,12 @@ A new file will be generated:
 redacted_output_full_candidate_name.csv
 
 ### Format:
-
+```
 record_id,redacted_data_json,is_pii
 1,"{""phone"": ""98XXXXXX10"", ""order_value"": 1299}",True
 2,"{""name"": ""[REDACTED_PII]"", ""email"": ""[REDACTED_PII]""}",True
 3,"{""product"": ""Shoes"", ""price"": 999}",False
-
+```
 ### Deployment Strategy
 
 Based on the system architecture, the PII Detector can be deployed as:
