@@ -35,14 +35,14 @@ Aadhaar → XXXX XXXX XXXX
 
 Passport / UPI / Address → [REDACTED_PII]
 ```
-Outputs a clean CSV with:
-
+### Outputs a clean CSV with:
+```
 record_id
 
 redacted_data_json
 
 is_pii (True/False)
-
+```
 ### Repository Structure
 ```
 ├── detector_full_candidate_name.py     
